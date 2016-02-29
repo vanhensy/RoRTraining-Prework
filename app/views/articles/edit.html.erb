@@ -1,0 +1,45 @@
+<%= stylesheet_link_tag "customize" %>
+<%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Montserrat' %>
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse vanz-nav gradient-background">
+    <div class="container">
+    <%= image_tag("teachme-logo.png", :alt => "vanhensy logo", class: 'logo') %>
+        <ul class="nav nav-pills pull-xs-right">
+        <li class="nav-item">
+            <%= link_to 'Show', @article,class: 'btn btn-sm btn-secondary-outline' %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'Back', articles_path, class: 'btn btn-sm btn-secondary-outline' %>
+        </li>
+        </ul>
+        
+    </div>
+    
+</nav>
+<div class="container" id="blog-body">
+    <div class="row"> 
+        <div class="col-md-8">
+    <div class="card">
+  <div class="card-header">
+      <h3><i class="fa fa-cog fa-spin"></i> Editing Article</h3>
+  </div>
+  <div class="card-block">
+    <%= render 'form' %>
+  </div>
+</div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+          <%= image_tag("blog-image.gif", :alt => "Sidebar Image", class: 'card-img-top') %>
+          <div class="card-block" style="padding-top:0px;margin-top:-20px">
+            <h4 class="card-title">Vanhensy's Blog </h4>
+            <p class="card-text introduction" style="text-align: justify;">This is my prework for Ruby class of Coderschool. Thank @Charles for give me this chance. I've improved it a little bit to make sure that I'm good enough to join this class.</p>
+          </div>
+        <div class="card-footer text-muted text-xs-center">
+            <a class="btn btn-info"><i class="fa fa-github-alt"></i> Visit His Github</a>
+                </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+

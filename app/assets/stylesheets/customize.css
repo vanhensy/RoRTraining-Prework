@@ -1,0 +1,24 @@
+.container {font-family: 'Montserrat', sans-serif;}
+.card-title a {color:#34495e!important}
+.card-title a:hover {color:#2c3e50!important; text-decoration: none;}
+#blog-body {margin-top: 90px;}
+.vanz-nav {height: 55px;}
+.gradient-background {
+background: #00c6ff; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo {height: 25px;margin-top:7.5px;}
+.btn-secondary-outline {
+    color: #fff!important;
+    border-color: #fff!important;
+}
+.nav-item {margin-top: 5px;}
+.card img {width:100%;}
+.index-maxheight {
+    max-height: 270px;
+    overflow: hidden;
+}
+.introduction {font-size: 13px;}
+.content-field {min-height: 250px;}
+.card-block {text-align: justify;}
