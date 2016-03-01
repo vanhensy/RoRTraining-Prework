@@ -26,7 +26,7 @@
                 </div>
                 <div class="card-footer text-muted text-xs-right">
                     <%= link_to raw("<i class=\"fa fa-pencil\"></i> Edit Post"), edit_article_path(article), class: 'btn btn-sm btn-success-outline' %>
-                    <%= button_to raw("<i class=\"fa fa-times\"></i> Delete"), article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline' %>
+                    <%= link_to raw("<i class=\"fa fa-times\"></i> Delete"), article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline' %>
                 </div>
             </div>
             <% end %>
