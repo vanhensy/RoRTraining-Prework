@@ -22,3 +22,4 @@ background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, F
 .introduction {font-size: 13px;}
 .content-field {min-height: 250px;}
 .card-block {text-align: justify;}
+.button_to {display: inline-block;}
