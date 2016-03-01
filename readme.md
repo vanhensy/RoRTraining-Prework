@@ -3,7 +3,7 @@
 
 **Vanhensy Ruby on Rails Blog** is a Ruby on Rails blog application.
 
-Submitted by: **Nguyễn Vương Anh Vỹ** - **nickname: vanhensy**
+Submitted by: **Nguyễn Vương Anh Vỹ** - Nickname: **vanhensy**
 
 Time spent: **8** hours spent in total
 
