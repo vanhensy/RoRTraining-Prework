@@ -22,11 +22,10 @@
                 <div class="card-block index-maxheight">
                     <h4 class="card-title"><%= link_to article.title, article %></h4>
                     <p class="card-text"><%= @markdown.render(article.body).html_safe %></p>
-                    
                 </div>
                 <div class="card-footer text-muted text-xs-right">
                     <%= link_to raw("<i class=\"fa fa-pencil\"></i> Edit Post"), edit_article_path(article), class: 'btn btn-sm btn-success-outline' %>
-                    <%= button_to "Delete" , article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline' %>
+                    <%= button_to "Delete" , article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline',:confirm => "Sure?" %>
                 </div>
             </div>
             <% end %>
