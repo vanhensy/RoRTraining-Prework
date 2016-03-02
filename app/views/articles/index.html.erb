@@ -14,8 +14,8 @@
 			</a>
 
 			<ul>
-				<li><%= link_to "", edit_article_path(article),'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Edit Article" %></li>
-				<li> <%= link_to "" , article, method: :delete, data: { confirm: 'Are you sure?' }, :form => { :id => "button-delete" },'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Delete Article" %></li>
+				<li><%= link_to raw("<i class=\"fa fa-pencil\"></i>"), edit_article_path(article),'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Edit Article" %></li>
+				<li> <%= link_to raw("<i class=\"fa fa-trash\"></i>") , article, method: :delete, data: { confirm: 'Are you sure?' }, :form => { :id => "button-delete" },'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Delete Article" %></li>
 			</ul>
 
 			<span aria-hidden="true" class="stretchy-nav-bg"></span>
