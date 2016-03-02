@@ -52,9 +52,5 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'redcarpet'
 # Implement FontAwesome
 gem 'font-awesome-sass'
-#Implement Sticky JS 
-gem 'sticky-rails'
-#Implement Animate CSS
-gem "animate-scss"
 #Deploy with Heroku
 gem 'rails_12factor', group: 'production'
