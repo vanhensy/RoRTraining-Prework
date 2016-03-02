@@ -762,7 +762,7 @@ edit content
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url('/assets/cd-sprite-3.svg') no-repeat 0 0;
+  background: url('/assets/gear.png') no-repeat 0 0;
 }
 .cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after {
   -webkit-transition: opacity 0.2s;
@@ -778,6 +778,7 @@ edit content
   opacity: 1;
 }
 .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::before {
+    
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -785,6 +786,7 @@ edit content
   transform: rotate(45deg);
 }
 .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::after {
+    background: url('/assets/cd-sprite-3.svg') no-repeat 0 0;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
