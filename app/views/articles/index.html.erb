@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-footer text-muted text-xs-right">
                     <%= link_to raw("<i class=\"fa fa-pencil\"></i> Edit Post"), edit_article_path(article), class: 'btn btn-sm btn-success-outline' %>
-                    <%= button_to "Delete" , article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline',:confirm => "Sure?" %>
+                    <%= button_to "Delete" , article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline',:confirm => "Sure?", id:'button-delete' %>
                 </div>
             </div>
             <% end %>
