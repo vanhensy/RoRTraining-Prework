@@ -1,11 +1,10 @@
-<%= stylesheet_link_tag "customize" %>
-<%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Montserrat' %>
+
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse vanz-nav gradient-background">
     <div class="container">
     <%= image_tag("teachme-logo.png", :alt => "vanhensy logo", class: 'logo') %>
         <ul class="nav nav-pills pull-xs-right">
         <li class="nav-item">
-            <%= link_to 'Show', @article,class: 'btn btn-sm btn-secondary-outline' %>
+            
         </li>
         <li class="nav-item">
             <%= link_to 'Back', articles_path, class: 'btn btn-sm btn-secondary-outline' %>
@@ -37,6 +36,11 @@
         <div class="card-footer text-muted text-xs-center">
             <a class="btn btn-info"><i class="fa fa-github-alt"></i> Visit His Github</a>
                 </div>
+        </div>
+        <div class="card">
+        <div class="card-block">
+        <%= link_to 'Show', @article,class: 'btn btn-sm btn-warning-outline' %>    
+        </div>    
         </div>
         </div>
     </div>
