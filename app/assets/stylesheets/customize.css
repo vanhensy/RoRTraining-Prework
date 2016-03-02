@@ -762,7 +762,7 @@ edit content
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url('/assets/gear.png') no-repeat 0 0;
+  background: url('app/assets/images/gear.png') no-repeat 0 0;
 }
 .cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after {
   -webkit-transition: opacity 0.2s;
