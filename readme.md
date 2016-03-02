@@ -17,8 +17,8 @@ The following **required** functionality is complete:
 * [x] User can edit an existing post.
 * [x] There is one post that introduces the App Creator with name, picture.
 * [x] User can delete stories, with an alert that asks the user to confirm.
-* [ ] User see a search form on the Posts page.
-* [ ] User can submit a search term to find all posts bywith titles containing the search term.
+* [x] User see a search form on the Posts page.
+* [x] User can submit a search term to find all posts bywith titles containing the search term.
 
 The following **optional** features are implemented:
 * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
@@ -26,12 +26,11 @@ The following **optional** features are implemented:
 * [ ] User can leave a comment on a post.
 * [ ] User can add "tags" to a post, and filter posts by tag. 
 
-> HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
-
 The following **additional** features are implemented:
 
 - [x] Improve UI and UX!
-
+- [x] Adding Animation 
+- [ ] Adding Admin Login
 ## Screenshot of App
 
 Here's a screenshot of real app:
@@ -43,7 +42,8 @@ Here's a screenshot of real app:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- Remember to add Tether Package to support boostrap
+- shouldn't use "rake assets:precompile" when push to Heroku
 
 ## License
 
