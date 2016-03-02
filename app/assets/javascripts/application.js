@@ -13,6 +13,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require launch
+//= require launch.js
 //= require turbolinks
 //= require_tree .
