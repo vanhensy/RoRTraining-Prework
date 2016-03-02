@@ -23,7 +23,7 @@
                     <p class="card-text"><%= @markdown.render(article.body).html_safe %></p>
                 </div>
                 <div class="card-footer text-muted text-xs-right">
-                    <p style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: 03/03/2016</p>
+                    <p style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: <%= article.created_at %></p>
                 </div>
             </div>
             <% end %>
