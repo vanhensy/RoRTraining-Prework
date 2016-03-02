@@ -54,3 +54,5 @@ gem 'redcarpet'
 gem 'font-awesome-sass'
 #Deploy with Heroku
 gem 'rails_12factor', group: 'production'
+#Fix Tether problem of Boostrap 
+gem 'rails-assets-tether'
