@@ -13,6 +13,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-
 //= require turbolinks
 //= require_tree .
+
+
+// Require tree should already include the file. require_tree includes all files in this directory.
