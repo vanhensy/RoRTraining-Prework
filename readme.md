@@ -31,6 +31,7 @@ The following **additional** features are implemented:
 - [x] Improve UI and UX!
 - [x] Adding Animation 
 - [ ] Adding Admin Login
+
 ## Screenshot of App
 
 Here's a screenshot of real app:
