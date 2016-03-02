@@ -7,13 +7,25 @@
             
             <% @articles.each do |article| %>
             <div class="card animated slideInUp">
+                <nav class="cd-stretchy-nav edit-content">
+			<a class="cd-nav-trigger" href="#0">
+				
+				<span aria-hidden="true"></span>
+			</a>
+
+			<ul>
+				<li><%= link_to "", edit_article_path(article),'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Edit Article" %></li>
+				<li> <%= link_to "" , article, method: :delete, data: { confirm: 'Are you sure?' }, :form => { :id => "button-delete" },'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Delete Article" %></li>
+			</ul>
+
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>
                 <div class="card-block index-maxheight">
                     <h4 class="card-title"><%= link_to article.title, article %></h4>
                     <p class="card-text"><%= @markdown.render(article.body).html_safe %></p>
                 </div>
                 <div class="card-footer text-muted text-xs-right">
-                    <%= link_to raw("<i class=\"fa fa-pencil\"></i> Edit Post"), edit_article_path(article), class: 'btn btn-sm btn-success-outline' %>
-                    <%= button_to "Delete?" , article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline', :form => { :id => "button-delete" } %>
+                    <p style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: 03/03/2016</p>
                 </div>
             </div>
             <% end %>
