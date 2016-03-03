@@ -8,13 +8,25 @@
             <div class="card">
                 <div class="card-block">
                     <h4 class="card-title"><%= @article.title %></h4>
+                    
                     <p class="card-text"><%= @markdown.render(@article.body).html_safe %></p>
                     
                 </div>
-                <div class="card-footer text-muted text-xs-right">
-                    <%= link_to raw("<i class=\"fa fa-pencil\"></i> Edit Post"), edit_article_path(@article), class: 'btn btn-sm btn-success-outline' %>
-                    <%= button_to "Delete", @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger-outline', confirm: 'Are you sure?'
-                    %>
+                <div class="card-footer text-muted " style="height: 50px;overflow:hidden;">
+                    
+                        
+                    <p class="col-md-6 text-xs-left" style="margin-bottom:0px;">
+                        Tags:
+  <% @article.tags.each do |tag| %>
+                        <%= link_to tag.name, tag_path(tag), class:'label label-default' %>
+  <% end %>
+</p>
+  
+                    
+                    <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: <%= @article.created_at %></p>
+                    
+                    
+                   
                 </div>
             </div>
             
