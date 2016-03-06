@@ -5,7 +5,7 @@
 
 Submitted by: **Nguyễn Vương Anh Vỹ** - Nickname: **vanhensy**
 
-Time spent: **8** hours spent in total
+Time spent: **15** hours spent in total
 
 URL: **[http://submit.vanhensy.com/](http://submit.vanhensy.com/)**
 
