@@ -56,3 +56,6 @@ gem 'font-awesome-sass'
 gem 'rails_12factor', group: 'production'
 #Fix Tether problem of Boostrap 
 gem 'rails-assets-tether', '>= 1.1.0'
+# Add Aunthentication 
+gem 'bcrypt'
+gem 'sorcery'

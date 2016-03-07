@@ -15,7 +15,7 @@
           &#9776;
         </button>
         <div class="collapse navbar-toggleable-xs" id="navbar-header">
-          <%= link_to image_tag("teachme-logo.png", :alt => "vanhensy logo", class: 'logo'), articles_path %>
+         <%= link_to image_tag("teachme-logo.png", :alt => "vanhensy logo", class: 'logo'), articles_path %>
           <ul class="nav nav-pills responsive-nav pull-xs-right">
             <li class="nav-item active" style="width:100%">
               <%= form_tag(articles_path, :method => "get", class: "navbar-form form-inline", id: "search-form") do %>
@@ -27,14 +27,64 @@
             </div>
             <% end %>   
             </li>
-            
           </ul>
           
         </div>
         </div>
       </nav> <!-- /navbar -->
-  <%= yield %>
+  
+        <div class="container" id="blog-body"> 
+            <div class="row">
+                <div class="col-md-8" >
+               <%= yield %>
+                </div>
+                <div class="col-md-4" id="sidebar">
+                    <div class="alert alert-success" role="alert" id="success-alert">
+                            <p id="notice"><%= notice %></p>
+                    </div>
+                <div class="card">
+          <%= image_tag("blog-image.gif", :alt => "Sidebar Image", class: 'card-img-top') %>
+          <div class="card-block" style="padding-top:0px;margin-top:-20px">
+            <h4 class="card-title">Vanhensy's Blog </h4>
+            <p class="card-text introduction" style="text-align: justify;">This is my prework for Ruby class of Coderschool. Thank @Charles for give me this chance. I've improved it a little bit to make sure that I'm good enough to join this class.</p>
+          </div>
+        <div class="card-footer text-muted text-xs-center">
+            <% if logged_in? %>
+            <p style="font-size:14px;margin-bottom:5px;"><%= "Logged in as #{current_user.username}" %></p>
+            <%= link_to "Sign Out", logout_path, class: 'btn btn-sm btn-warning' %>
+            <% else %>
+            <%= link_to "Login to Manage", login_path, class: 'btn btn-sm btn-success' %>
+            <% end %>
+            
+                </div>
+        </div>
+                    <% if logged_in? %>
+        <div class="card">
+                <div class="card-block">
+                <%= link_to 'New Article', new_article_path, class: 'btn btn-sm btn-warning-outline' %>  
+                </div>
+            </div>
+                    <% end %>
+            
+            
+        </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <script>
+    $("#success-alert").fadeTo(1000, 500).slideUp(500, function(){
+    $("#success-alert").alert('close');
+});
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })    

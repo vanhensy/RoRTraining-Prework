@@ -1,11 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<div class="container" id ="blog-body"> 
-    <div class="row"> 
-        <div class="col-md-8">
-            
-            
-            <div class="card">
+                <div class="card">
+                    <% if logged_in? %>
+                <nav class="cd-stretchy-nav edit-content">
+			<a class="cd-nav-trigger" href="">
+			</a>
+			<ul>
+				<li><%= link_to raw("<i class=\"fa fa-pencil\"></i>"), edit_article_path(@article),'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Edit Article" %></li>
+				<li> <%= link_to raw("<i class=\"fa fa-trash\"></i>") , @article, method: :delete, data: { confirm: 'Are you sure?' }, :form => { :id => "button-delete" },'data-toggle' => "tooltip", 'data-placement' => "left", 'title' => "Delete Article" %></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>
+                <% end %>
                 <div class="card-block">
                     <h4 class="card-title"><%= @article.title %></h4>
                     
@@ -17,39 +21,30 @@
                         
                     <p class="col-md-6 text-xs-left" style="margin-bottom:0px;">
                         Tags:
-  <% @article.tags.each do |tag| %>
+                        <% @article.tags.each do |tag| %>
                         <%= link_to tag.name, tag_path(tag), class:'label label-default' %>
-  <% end %>
-</p>
-  
-                    
+                        <% end %>
+                    </p>
+    
                     <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: <%= @article.created_at %></p>
-                    
-                    
-                   
+                           
                 </div>
+            </div>
+            <div class="card">
+            <div class="card-header"> Comments</div>
+            <div class="card-block">
+            
+            <div class="card-text">
+                <%= render partial: 'articles/comment', collection: @article.comments %>   
+                <%= render partial: 'comments/form' %>
+                
+            </div>    
+            </div>
             </div>
             
-        </div>
-        <div class="col-md-4">
-                <div class="card">
-          <%= image_tag("blog-image.gif", :alt => "Sidebar Image", class: 'card-img-top') %>
-          <div class="card-block" style="padding-top:0px;margin-top:-20px">
-            <h4 class="card-title">Vanhensy's Blog </h4>
-            <p class="card-text introduction" style="text-align: justify;">This is my prework for Ruby class of Coderschool. Thank @Charles for give me this chance. I've improved it a little bit to make sure that I'm good enough to join this class.</p>
-          </div>
-        <div class="card-footer text-muted text-xs-center">
-            <a class="btn btn-info"><i class="fa fa-github-alt"></i> Visit His Github</a>
-                </div>
-        </div>
-            <div class="card">
-                <div class="card-block">
-                 <%= link_to 'New Article', new_article_path, class: 'btn btn-sm btn-warning-outline' %>   
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-<br>
-  
-</div>
+      
+        
+<p id="notice"><%= notice %></p>
+
+
+
