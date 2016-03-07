@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 * [x] User can add "tags" to a post, and filter posts by tag. 
 
 The following **additional** features are implemented:
-
+- [x] Limited height for long post
 - [x] Improve UI and UX!
 - [x] Adding Animation 
 - [x] Adding Authentication
