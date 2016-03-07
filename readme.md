@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 - [x] Improve UI and UX!
 - [x] Adding Animation 
-- [ ] Adding Admin Login
+- [x] Adding Admin Login
 
 ## Screenshot of App
 
