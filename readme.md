@@ -30,7 +30,12 @@ The following **additional** features are implemented:
 
 - [x] Improve UI and UX!
 - [x] Adding Animation 
-- [x] Adding Admin Login
+- [x] Adding Authentication
+- [x] Security with non-login user
+- [x] Adding Created_date and Updated_date
+- [x] Admin can delete comments
+- [x] Adding comment counts
+- [x] And more things... 
 
 ## Screenshot of App
 
