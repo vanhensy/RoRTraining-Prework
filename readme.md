@@ -5,9 +5,11 @@
 
 Submitted by: **Nguyễn Vương Anh Vỹ** - Nickname: **vanhensy**
 
-Time spent: **15** hours spent in total
+Time spent: **25** hours spent in total
 
 URL: **[http://submit.vanhensy.com/](http://submit.vanhensy.com/)**
+
+Account Login: review@coderschool.vn (Password:coderschool)
 
 ## User Stories
 
@@ -39,11 +41,9 @@ The following **additional** features are implemented:
 
 ## Screenshot of App
 
-Here's a screenshot of real app:
+This app is live running under this domain: **[http://submit.vanhensy.com/](http://submit.vanhensy.com/)**
 
-
-
-![Image Screenshot](/app/assets/images/first-ruby-app.PNG)
+Check it for full feature and review.
 
 
 ## Notes
