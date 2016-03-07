@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.card {animation-delay: 0.5s;}
 .card-block ul {
     list-style: inherit!important;
     padding-left: 20px;
@@ -77,7 +77,9 @@ background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, F
 .card-block {text-align: justify;}
 .button_to {display: inline-block;}
 .custom-form {padding: 0.23rem 0.75rem!important;width: 72.5%!important;}
-
+.total-count {position: absolute;
+    top: 10px;
+    right: 10px;}
 
 .custom-form::-webkit-input-placeholder { font-size:0.95em!important; }
 .custom-form::-moz-placeholder { font-size: 0.95em!important; } /* firefox 19+ */

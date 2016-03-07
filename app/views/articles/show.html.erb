@@ -26,7 +26,13 @@
                         <% end %>
                     </p>
     
-                    <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: <%= @article.created_at %></p>
+                    <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;margin-top:5px;"> 
+                    <% if @article.created_at == @article.updated_at %>
+                        Created by: Vanhensy - On: <%= @article.created_at %>
+                        <% else %>
+                        Updated by: Vanhensy - On: <%= @article.updated_at %>
+                        <% end %>
+                    </p>
                            
                 </div>
             </div>
@@ -44,7 +50,7 @@
             
       
         
-<p id="notice"><%= notice %></p>
+
 
 
 

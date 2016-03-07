@@ -1,5 +1,5 @@
             <% @articles.each do |article| %>
-            <div class="card animated slideInUp">
+            <div class="card animated flipInX">
                 <% if logged_in? %>
                 <nav class="cd-stretchy-nav edit-content">
 			<a class="cd-nav-trigger" href="">
@@ -22,10 +22,16 @@
                         <%= link_to tag.name, tag_path(tag), class:'label label-default' %>
                         <% end %>
                     </p>             
-                    <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;"> Created by: Vanhensy - On: <%= article.created_at %></p>
+                    <p class="col-md-6 text-xs-right" style="margin-bottom:0px;font-size: 0.7rem;margin-top:5px;"> 
+                        <% if article.created_at == article.updated_at %>
+                        Created by: Vanhensy - On: <%= article.created_at %>
+                        <% else %>
+                        Updated by: Vanhensy - On: <%= article.updated_at %>
+                        <% end %>
+                    </p>
                 </div>
             </div>
             <% end %>
         
-        
+
    

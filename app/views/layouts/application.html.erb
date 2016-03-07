@@ -3,6 +3,7 @@
 <head>
   <title>Vanhensy's Blog with Ruby on Rails</title>
 <%= stylesheet_link_tag "customize" %>
+<%= stylesheet_link_tag "animate" %>
 <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Montserrat' %>
 <%= favicon_link_tag 'vanz-blog-favicon.png' %>
 <%= javascript_include_tag 'application'  %>
@@ -39,10 +40,15 @@
                <%= yield %>
                 </div>
                 <div class="col-md-4" id="sidebar">
-                    <div class="alert alert-success" role="alert" id="success-alert">
-                            <p id="notice"><%= notice %></p>
-                    </div>
+                        
+                            
+                       
                 <div class="card">
+                    <% if @articles %>    
+                        <span class="label label-success total-count">
+                        Total Articles: <%= @articles.size %>
+                        </span> 
+                        <% end %>
           <%= image_tag("blog-image.gif", :alt => "Sidebar Image", class: 'card-img-top') %>
           <div class="card-block" style="padding-top:0px;margin-top:-20px">
             <h4 class="card-title">Vanhensy's Blog </h4>
@@ -66,7 +72,9 @@
             </div>
                     <% end %>
             
-            
+            <div class="alert alert-success" role="alert" id="success-alert">
+                            <p id="notice"><%= notice %></p>
+                    </div>
         </div>
             </div>
         </div>
